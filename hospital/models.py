@@ -2,12 +2,6 @@ from django.contrib.auth.models import AbstractUser, Group, Permission
 from django.db import models
 from django.conf import settings
 
-class CustomUser(AbstractUser):
-    groups = models.ManyToManyField(Group, blank=True, related_name='custom_users')
-    user_permissions = models.ManyToManyField(Permission, blank=True, related_name='custom_users')
-
-    class Meta:
-        swappable = 'AUTH_USER_MODEL'
 
 class Doctor(models.Model):
     GENDER_CHOICES = [

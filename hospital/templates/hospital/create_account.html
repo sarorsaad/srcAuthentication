@@ -26,7 +26,8 @@
                 </div>
 
                 <div class="wrap-input100 validate-input">
-                    <input class="input100" type="date" name="birthdate" value="{{ doctor.birthdate|date:'Y-m-d' }}" required>
+                    <input class="input100" type="date" name="birthdate" 
+                    value="birthdate" required>
                     <span class="focus-input100"></span>
                     <span class="label-input100">Birthdate</span>
                 </div>
@@ -107,22 +108,23 @@
 
 
 </form>
+{% if error == 'no' %}
+<script type="text/javascript">
+    alert("You have successfully signed up...");
+    window.location.href = "{% url 'hospital:login' %}";
+</script>
+{% endif %}
 
+{% if error == 'yes' %}
+<script type="text/javascript">
+    alert("Something went wrong...");
+    window.location.href = "{% url 'hospital:login' %}";
+</script>
+{% endif %}
 {% endblock %}
 
-{% if error == "no" %}
-    <script type="text/javascript">
-        alert("You have successfully signed up...");
-        window.location.href = "{% url 'account:login' %}";
-    </script>
-{% endif %}
 
-{% if error == "yes" %}
-    <script type="text/javascript">
-        alert("Something went wrong...");
-        window.location.href = "{% url 'account:login' %}";
-    </script>
-{% endif %}
+
 
 
      
