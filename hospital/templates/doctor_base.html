@@ -1,0 +1,33 @@
+{% extends 'layouts/dashboard_users.html' %}
+   
+{% load static %}
+
+    
+{% block sidebar %}
+
+  <style>  
+    
+    .background-image {
+      background-image: url('{% static "images/bg-img.jpg" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      /* Add any other necessary styles */
+    }
+    
+  </style>
+  
+<div class="background-image"></div>
+
+
+
+
+{% endblock sidebar %}
+        
+
+
+
+{% block content %}
+    
+{% endblock content %}

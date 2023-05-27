@@ -1,0 +1,132 @@
+{% extends 'doctor_base.html' %}
+
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS styles for the background image and animation */
+  
+
+    .welcome-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      animation: fade-in 2s ease-in-out;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-image">
+    <div class="welcome-message">
+      <h1>Welcome to Al Mickwa Radiology Center</h1>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- /.sidebar -->
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 406.844px;">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">
+            <i class="nav-icon fas fa-th"></i>
+            &nbsp;doctor -Dashboard</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item active">Dashboard</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="callout callout-success">
+    <h5 class="text-success">
+        <i class="fa fa-check"></i> Success
+    </h5>
+    <p>
+        Login success
+    </p>
+</div>
+
+
+ 
+
+
+       <!-- Small boxes (Stat box) -->
+<div class="row">
+    <!-- ./col -->
+    <div class="col-lg-4">
+        <!-- small box -->
+        <div class="small-box bg-primary">
+          <div class="inner">
+            <h3>42</h3>
+            <p>Total Reports</p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-layer-group"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ./col -->
+    <!-- ./col -->
+    <div class="col-lg-4">
+        <!-- small box -->
+        <div class="small-box bg-warning">
+          <div class="inner">
+            <h3>30</h3>
+            <p>Pending Reports</p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-pause-circle"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ./col -->
+      <!-- ./col -->
+      <div class="col-lg-4">
+        <!-- small box -->
+        <div class="small-box bg-success">
+          <div class="inner">
+            <h3>12</h3>
+            <p>Completed Reports</p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-check"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ./col -->
+  </div>
+  <!-- /.row -->
+  <div id="sidebar-overlay"></div></div>
+<!-- /.content-wrapper -->
+
+<input type="hidden" id="system_currency" value="USD">
+</div><!-- /.container-fluid -->
+</section>
+{% endblock content %}

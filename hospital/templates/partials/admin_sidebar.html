@@ -1,0 +1,233 @@
+{% extends "layouts/dashboard_base.html" %}
+
+{% block sidebar %}
+    <!-- Specific content for the admin sidebar -->
+
+    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" 
+        role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a href=" 'admino:admin_dashboard' %}" class="nav-link active" id="dashboard">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+    
+          <li class="nav-item">
+            <li class="nav-item">
+              <a href=" 'admino:view_profile'' %}" class="nav-link" id="profile">
+                  <i class="nav-icon fas fa-user-circle"></i>
+                  <p>
+                      Profile
+                  </p>
+              </a>
+          </li>
+          
+          <li class="nav-item">
+              <a href=" 'admino:invoices' %}" class="nav-link" id="invoices">
+                  <i class="nav-icon fas fa-file-invoice"></i>
+                  <p>
+                      Invoices
+                  </p>
+              </a>
+          </li>
+          
+    
+          <li class="nav-item">
+      <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="reports">
+        <i class="nav-icon fas fa-flag"></i>
+        <p>
+          Reports
+        </p>
+      </a>
+    </li>
+    
+            <li class="nav-item">
+        <a href=" 'admino:admin_dashboard'  %}" class="nav-link" id="branches">
+          <i class="fas fa-map-marked-alt nav-icon"></i>
+          <p>Branches</p>
+        </a>
+      </li>
+    
+          <li class="nav-item">
+      <a href=" 'admino:admin_dashboard'  %}" class="nav-link" id="tests">
+        <i class="nav-icon fas fa-x-ray"></i>
+        <p>
+          Tests
+        </p>
+      </a>
+    </li>
+    
+          <li class="nav-item">
+      <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="doctors">
+        <i class="nav-icon fa fa-user-md"></i>
+        <p>
+          Doctors
+        </p>
+      </a>
+    </li>
+    
+        <li class="nav-item has-treeview" id="prices">
+        <a href="../admino/" class="nav-link" id="prices_link">
+          <i class="nav-icon fas fa-list"></i>
+          <p>
+            Price List
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+    
+                      <li class="nav-item">
+            <a href=" url 'admino:admin_dashboard'  %}" class="nav-link" id="tests_prices">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Tests Price</p>
+            </a>
+          </li>
+                    </ul>
+      </li>
+    
+          <li class="nav-item">
+      <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="contracts">
+        <i class="fas fa-file-contract nav-icon"></i>
+        <p>Contracts</p>
+      </a>
+    </li>
+    
+          <li class="nav-item">
+      <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="patients">
+        <i class="nav-icon fas fa-user-injured"></i>
+        <p>
+          Patients
+        </p>
+      </a>
+    </li>
+    
+          <li class="nav-item">
+      <a href=" url 'admino:admin_dashboard'  %}" class="nav-link" id="bookings">
+        <i class="nav-icon fas fa-calendar"></i>
+        <p>
+          Bookings
+        </p>
+      </a>
+    </li>
+    
+              <li class="nav-item">
+          <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="chat">
+            <i class="nav-icon far fa-comment-dots"></i>
+            <p>
+              Chat
+            </p>
+          </a>
+        </li>
+    
+          <li class="nav-item has-treeview" id="accounting">
+      <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="accounting_link">
+        <i class="nav-icon fas fa-calculator"></i>
+        <p>
+          Accounting
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+    
+                  <li class="nav-item">
+          <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="expense_categories">
+            <i class="far fa-circle nav-icon"></i>
+            <p>
+              Expense Categories
+            </p>
+          </a>
+        </li>
+        
+                  <li class="nav-item">
+          <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="expenses">
+            <i class="far fa-circle nav-icon"></i>
+            <p>
+              Expenses
+            </p>
+          </a>
+        </li>
+        
+                  <li class="nav-item">
+          <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="accounting_reports">
+            <i class="far fa-circle nav-icon"></i>
+            <p>
+              Accounting Report
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="accounting_doctor_reports">
+            <i class="far fa-circle nav-icon"></i>
+            <p>
+              Doctor report
+            </p>
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+            <li class="nav-item has-treeview" id="users_roles">
+        <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="users_roles_link">
+          <i class="nav-icon fas fa-user"></i>
+          <p>
+            Roles And Users
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+    
+                      <li class="nav-item">
+            <a href=" url 'admino:admin_dashboard'  %}" class="nav-link" id="roles">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Roles</p>
+            </a>
+          </li>
+          
+                      <li class="nav-item">
+            <a href=" url 'admino:admin_dashboard'  %}" class="nav-link" id="users">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Users</p>
+            </a>
+          </li>
+          
+        </ul>
+      </li>
+          
+          <li class="nav-item">
+      <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="settings">
+        <i class="fa fa-cogs nav-icon"></i>
+        <p>Settings</p>
+      </a>
+    </li>
+    
+          <li class="nav-item">
+      <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="translations">
+        <i class="fa fa-book nav-icon"></i>
+        <p>Translations</p>
+      </a>
+    </li>
+    
+          <li class="nav-item">
+      <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="activity_logs">
+        <i class="fa fa-server nav-icon"></i>
+        <p>Activity Logs</p>
+      </a>
+    </li>
+    
+          <li class="nav-item">
+      <a href="url 'admino:admin_dashboard'  %}" class="nav-link" id="backups">
+        <i class="fa fa-database nav-icon"></i>
+        <p>Database Backups</p>
+      </a>
+    </li>
+    
+    
+    </ul>
+    </nav>    
+{% endblock %}
+
+
